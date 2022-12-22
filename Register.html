@@ -1,6 +1,3 @@
-e run si 
-Register.html
-
 <!DOCTYPE html>
 <html>
 
@@ -11,54 +8,54 @@ Register.html
     <link rel="stylesheet" href="../-Inxhinieri e Webit-/HeaderStyle.css">
     <link rel="stylesheet" href="../-Inxhinieri e Webit-/FooterStyle.css">
     <link rel="stylesheet" href="../-Inxhinieri e Webit-/Register.css">
-  
-    <title>Register</title>
-</head>
 
-<body> 
+    <title>Register</title>
+    <script src="../-Inxhinieri e Webit-/jsValidate.js"></script>
+</head>
+<body bgcolor="#D8BFD8">
     <div class="regBox">
         <div>
-            <img src="https://www.solidbackgrounds.com/images/3840x2160/3840x2160-pastel-purple-solid-color-background.jpg" style="width: 100%;"/>
+            <img src="https://www.solidbackgrounds.com/images/3840x2160/3840x2160-pastel-purple-solid-color-background.jpg"
+                style="width: 100%;" />
         </div>
-        <!-- <div class="colorBox"> -->
-            <!-- Empty Inside -->
-        <!-- </div> -->
         <div class="formBox">
-            <h3>
-               Register Form
-           </h3>
+            <h3 class="headings">
+                Register Form
+            </h3>
             <div>
-             <img src="https://media.istockphoto.com/id/1176281328/vector/light-pink-paper-texture-background-border-of-hues-of-light-pink-paint-splashing-droplets.jpg?s=612x612&w=0&k=20&c=Hf30T4odT_Y0qvrzHvlkAoU-sUjq_U42VO8m-mlc5lM=" style="position: absolute;
+                <img src="https://media.istockphoto.com/id/1176281328/vector/light-pink-paper-texture-background-border-of-hues-of-light-pink-paint-splashing-droplets.jpg?s=612x612&w=0&k=20&c=Hf30T4odT_Y0qvrzHvlkAoU-sUjq_U42VO8m-mlc5lM="
+                    style="position: absolute;
     width: 167%;
     height: 356%;
-"/>
-        </div>
-        <div style="margin-left: 60%;">
-            <form>
-                <!-- <b>
+    border-radius: 32px;
+" />
+            </div>
+            <div style="margin-left: 60%;">
+                <form onsubmit="return validateArr()">
+                    <!-- <b>
                     Fields marked with * are required
                 </b> -->
-                <label>
-                    Username 
-                </label>
-                <input type="text" placeholder="Full name" name="username" id="username">
-                <label>
-                    E-Mail 
-                </label>
-                <input type="text" placeholder="Email" name="email" id="email">
-                <label>
-                    Password 
-                </label>
-                <input type="password" placeholder="Password" name="password" id="password">
-                <button name="registerBtn" id="submitBtn" id="submitBtn">
-                    Submit
-                </button>
-                <br />
-                <!-- <button name="redirected" class="loginBtn"> -->
-                    <a href="LoginUsers.html" style="color: white;">Have an Acoount? Log in</a>
-                <!-- </button> -->
-            </form>
-</div>
+                    <label>
+                        Username
+                    </label>
+                    <input type="text" placeholder="Full name" name="username" id="username">
+                    <label>
+                        E-Mail
+                    </label>
+                    <input type="text" placeholder="Email" name="email" id="email">
+                    <label>
+                        Password
+                    </label>
+                    <input type="password" placeholder="Password" name="password" id="password">
+                    <button name="registerBtn" id="submitBtn" id="submitBtn">
+                        Submit
+                    </button>
+                    <br />
+                    <!-- <button name="redirected" class="loginBtn"> -->
+                    <a href="../-Inxhinieri e Webit-/login.html" style="color: rgb(7, 7, 7);">Have an Acoount? Log in</a>
+                    <!-- </button> -->
+                </form>
+            </div>
         </div>
     </div>
 </body>

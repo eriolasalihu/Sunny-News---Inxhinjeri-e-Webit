@@ -1,66 +1,109 @@
-e run si 
-Register.html
-
-<!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-    <!-- Styles and links -->
-
-    <link rel="stylesheet" href="../-Inxhinieri e Webit-/HeaderStyle.css">
-    <link rel="stylesheet" href="../-Inxhinieri e Webit-/FooterStyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../-Inxhinieri e Webit-/Register.css">
-  
-    <title>Register</title>
+    <link rel="stylesheet" href="../-Inxhinieri e Webit-/FooterStyle.css">
+    <link rel="stylesheet" href="../-Inxhinieri e Webit-/HeaderStyle.css">
+    <script defer src="./Register.js"></script>
 </head>
+<body>
+    <header>
+        <div class="header">
+            <img src="https://iconarchive.com/download/i96648/iconsmind/outline/Newspaper-2.ico" style="width: 72px;
+            margin: 0px 12px; height: 45px;
+            " />
+          
+            <div class="header-right">
+                <a class="active" href="#home">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#Reklama">Advertise</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+       </header>
 
-<body> 
-    <div class="regBox">
-        <div>
-            <img src="https://www.solidbackgrounds.com/images/3840x2160/3840x2160-pastel-purple-solid-color-background.jpg" style="width: 100%;"/>
-        </div>
-        <!-- <div class="colorBox"> -->
-            <!-- Empty Inside -->
-        <!-- </div> -->
-        <div class="formBox">
-            <h3>
-               Register Form
-           </h3>
-            <div>
-             <img src="https://media.istockphoto.com/id/1176281328/vector/light-pink-paper-texture-background-border-of-hues-of-light-pink-paint-splashing-droplets.jpg?s=612x612&w=0&k=20&c=Hf30T4odT_Y0qvrzHvlkAoU-sUjq_U42VO8m-mlc5lM=" style="position: absolute;
-    width: 167%;
-    height: 356%;
-"/>
-        </div>
-        <div style="margin-left: 60%;">
-            <form>
-                <!-- <b>
-                    Fields marked with * are required
-                </b> -->
-                <label>
-                    Username 
-                </label>
-                <input type="text" placeholder="Full name" name="username" id="username">
-                <label>
-                    E-Mail 
-                </label>
-                <input type="text" placeholder="Email" name="email" id="email">
-                <label>
-                    Password 
-                </label>
-                <input type="password" placeholder="Password" name="password" id="password">
-                <button name="registerBtn" id="submitBtn" id="submitBtn">
-                    Submit
-                </button>
-                <br />
-                <!-- <button name="redirected" class="loginBtn"> -->
-                    <a href="LoginUsers.html" style="color: white;">Have an Acoount? Log in</a>
-                <!-- </button> -->
-            </form>
-</div>
-        </div>
+       <main>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Regjistrohu</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password perseri</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Regjistrohu</button>
+        </form>
     </div>
+    
+</main>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="rgb(33, 31, 32)" fill-opacity="1"
+            d="M0,224L48,208C96,192,192,160,288,122.7C384,85,480,43,576,58.7C672,75,768,149,864,160C960,171,1056,117,1152,85.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+            <footer class="footer">
+                <div class="l-footer">
+                    <h1>
+                        <img src="https://iconarchive.com/download/i96648/iconsmind/outline/Newspaper-2.ico" style="width: 72px;
+            margin: 0px 12px; height: 45px;
+            " />
+                    </h1>
+                    <p>
+                        Gazeta SunnyHill News nuk eshte vetem per te raportuar te rejat ashtu sic jane, por edhe per t'i bere njerezit te ndermarrin dicka per ato qe po ndodhin.</p>
+                </div>
+                <ul class="r-footer">
+                    <li>
+                        <h2>Social</h2>
+                        <ul class="box">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Reddit</a></li>
+                        </ul>
+                    </li>
+                    <li class="features">
+                        <h2>
+                            Information</h2>
+                        <ul class="box h-box">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Certifications</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            Legal</h2>
+                        <ul class="box">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Contract</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="b-footer">
+                    <p>All rights reserved by ©SunnyHillNews 2022 </p>
+                </div>
+            </footer>
 </body>
-
 </html>

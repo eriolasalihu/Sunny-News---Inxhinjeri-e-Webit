@@ -37,10 +37,10 @@ body {
   color: black;
 }
 
-.header a.active {
+/* .header a.active {
   background-color: rgb(33, 31, 32);
   color: white;
-}
+} */
 
 .header-right {
   float: right;

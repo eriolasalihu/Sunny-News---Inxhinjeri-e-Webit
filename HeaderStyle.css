@@ -7,7 +7,7 @@ body {
 
 .header {
   overflow: hidden;
-  background-color: #d7dcd8;
+  background-color: rgb(33, 31, 32);
   padding: 20px 10px;
   position: fixed;
   width: 100%;
@@ -17,7 +17,7 @@ body {
 
 .header a {
   float: left;
-  color: black;
+  color: #ffff;
   text-align: center;
   padding: 12px;
   text-decoration: none;

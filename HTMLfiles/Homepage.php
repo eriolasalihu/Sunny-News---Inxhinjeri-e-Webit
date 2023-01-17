@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+<?php
+
+require_once '../buisnessLogic/procedural/database.inc.php';
+require_once '../buisnessLogic/procedural/register.php';
+
+?>
 
 <head>
     <link rel="stylesheet" href="../style/HomeStyle.css">
@@ -7,14 +13,15 @@
     <link rel="stylesheet" href="../style/HomeStyle.css">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/HeaderStyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <title>Homepage</title>
 </head>
 
 <body>
     <header>
         <div class="header">
-            <img src="https://www.pngkey.com/png/full/208-2088636_news-amp-events-report-icon-black-png-newspaper.png"
-                style="width: 72px;
+            <img src="https://www.pngkey.com/png/full/208-2088636_news-amp-events-report-icon-black-png-newspaper.png" style="width: 72px;
         margin: 0px 12px; height: 45px;
         " />
 
@@ -68,8 +75,7 @@
 
             <div class="banner-sub-content">
                 <div class="hot-topic">
-                    <img src="https://ketohh.com/wp-content/uploads/2018/01/LRM_EXPORT_64614379716267_20181012_092025598-e1539296818519.jpeg"
-                        alt="" style="width: 102%;">
+                    <img src="https://ketohh.com/wp-content/uploads/2018/01/LRM_EXPORT_64614379716267_20181012_092025598-e1539296818519.jpeg" alt="" style="width: 102%;">
 
                     <div class="hot-topic-content">
                         <h2>Sa ndikojne frutat ne shendetin tone</h2>
@@ -82,8 +88,7 @@
                 </div>
 
                 <div class="hot-topic">
-                    <img src="https://pix.eurovisionworld.com/pix/albania-festivali-i-kenges-2023-albina-familja-kelmendi.jpg"
-                        alt="">
+                    <img src="https://pix.eurovisionworld.com/pix/albania-festivali-i-kenges-2023-albina-familja-kelmendi.jpg" alt="">
 
                     <div class="hot-topic-content">
                         <h2>Kush do te perfaqesoje Shqiperine ne Eurovision 2022? </h2>
@@ -95,8 +100,7 @@
                 </div>
 
                 <div class="hot-topic">
-                    <img src="https://yt3.googleusercontent.com/ytc/AMLnZu9X0I_rv6PlC0FPlF3893vaH-QPFiERqfBGQu68uA=s900-c-k-c0x00ffffff-no-rj"
-                        alt="">
+                    <img src="https://yt3.googleusercontent.com/ytc/AMLnZu9X0I_rv6PlC0FPlF3893vaH-QPFiERqfBGQu68uA=s900-c-k-c0x00ffffff-no-rj" alt="">
 
                     <div class="hot-topic-content">
                         <h2>Kur do te filloje BBV2 ne Shqiperi</h2>
@@ -108,8 +112,7 @@
                 </div>
 
                 <div class="hot-topic">
-                    <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_s_pog_staticContent_hero_lg_2x/primary/yk2f8tqpjxzdnw3e5b1n"
-                        alt="">
+                    <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_s_pog_staticContent_hero_lg_2x/primary/yk2f8tqpjxzdnw3e5b1n" alt="">
 
                     <div class="hot-topic-content">
                         <h2>Kush do te fitoje WorldCup 2022?</h2>
@@ -124,8 +127,7 @@
         </section>
         <div class="BottomBoxes">
             <div class="BoxHoldr1">
-                <img src="https://wallpaperforu.com/wp-content/uploads/2021/08/Messi-Paris-Saint-Germain-Wallpapers19.jpg"
-                    style="width: 100%;" />
+                <img src="https://wallpaperforu.com/wp-content/uploads/2021/08/Messi-Paris-Saint-Germain-Wallpapers19.jpg" style="width: 100%;" />
                 <h3>
                     Sport
                 </h3>
@@ -151,8 +153,7 @@
             </div>
 
             <div class="BoxHoldr1">
-                <img src="https://img.freepik.com/free-vector/medical-science-healthcare-blue-banner_1017-23667.jpg?w=2000"
-                    style="width: 100%;" />
+                <img src="https://img.freepik.com/free-vector/medical-science-healthcare-blue-banner_1017-23667.jpg?w=2000" style="width: 100%;" />
                 <h3>Shendetesi</h3>
 
                 <div>
@@ -167,15 +168,13 @@
     </main>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="rgb(33, 31, 32)" fill-opacity="1"
-            d="M0,224L48,208C96,192,192,160,288,122.7C384,85,480,43,576,58.7C672,75,768,149,864,160C960,171,1056,117,1152,85.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        <path fill="rgb(33, 31, 32)" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,122.7C384,85,480,43,576,58.7C672,75,768,149,864,160C960,171,1056,117,1152,85.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
         </path>
     </svg>
     <footer class="footer">
         <div class="l-footer">
             <h1>
-                <img src="https://www.pngkey.com/png/full/208-2088636_news-amp-events-report-icon-black-png-newspaper.png"
-                    style="width: 72px;
+                <img src="https://www.pngkey.com/png/full/208-2088636_news-amp-events-report-icon-black-png-newspaper.png" style="width: 72px;
                 margin: 0px 12px; height: 45px;
                 " />
             </h1>

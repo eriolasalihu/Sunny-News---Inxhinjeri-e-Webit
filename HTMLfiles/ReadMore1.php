@@ -1,12 +1,10 @@
-<!-- https://www.shutterstock.com/image-photo/assorted-healthy-smoothies-top-view-260nw-1634547784.jpg -->
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="../-Inxhinieri e Webit-/HeaderStyle.css">
-    <link rel="stylesheet" href="../-Inxhinieri e Webit-/FooterStyle.css">
-    <link rel="stylesheet" href="../-Inxhinieri e Webit-/ReadMore1.css">
+    <link rel="stylesheet" href="../style/HeaderStyle.css">
+    <link rel="stylesheet" href="../style/FooterStyle.css">
+    <link rel="stylesheet" href="../style/ReadMore1.css">
     <title>Read More</title>
 </head>
 <body>

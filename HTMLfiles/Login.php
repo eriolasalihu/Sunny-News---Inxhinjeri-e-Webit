@@ -1,7 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <html>
-
+<?php
+        require_once '../backend/dbh.class.php';
+    ?>
 <head>
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../style/login_style.css">
     <link rel="stylesheet" type="text/css" href="../style/FooterStyle.css">
     <link rel="stylesheet" type="text/css" href="../style/HeaderStyle.css">
-    <script src=".../js/login.js"></script>
+    <script src="../js/login.js"></script>
    
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,7 +40,7 @@
 
     <div class="login-page">
         <div class="form">
-            <form>
+            <form action="../backend/loginVerify.php" method="post">
                 <h1>Kyqu</h1>
                 <input type="text" name="username" id="username" placeholder="Username" required/>
                 <input type="password" name="password" id="password" placeholder="Password" required/>

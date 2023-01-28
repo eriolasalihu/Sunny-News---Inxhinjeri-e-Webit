@@ -1,6 +1,6 @@
 <?php
 
-    include_once 'Person.class.php';
+    include_once 'Person.php';
 
 class AdminUser extends Person{
         

@@ -49,7 +49,6 @@
             $mapper = new UserMapper();
             $user = $mapper->getUserByUsername($username);
 
-            /*
 
             if ($user==null) {
                 return false;
@@ -61,7 +60,6 @@
                 return false;
             }
 
-            */
 
             if ($user == null || count($user) == 0) return false;
             else if (password_verify($password, $user['password'])){

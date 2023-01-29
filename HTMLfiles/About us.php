@@ -42,28 +42,28 @@
     </div>
 
         <div class="label2">
-            <label>
+            <p>
                 Sherbimet tona
-            </label>
+</p>
         </div>
         <div class="Komponentat">
             <div class="Komp1">
-                <img src="../-Inxhinieri e Webit-/Pics/newspaper.png" width="100" height="90">
+                <img src="../Pics/newspaper.png" width="100" height="90">
                 <br/>
                 Ne ndajme me ju informacionet me te fundit
             </div>
             <div class="Komp1">
-                <img src="../-Inxhinieri e Webit-/Pics/ticket.png" width="100" height="90">
+                <img src="../Pics/ticket.png" width="100" height="90">
                 <br/>
                 Reklamojme produkte cilesore
             </div>
             <div class="Komp1">
-                <img src="../-Inxhinieri e Webit-/Pics/play-store.png" width="100" height="90">
+                <img src="../Pics/play-store.png" width="100" height="90">
                 <br/>
                 Perdoruesit tane mund te lexojne te rejat edhe nga telefoni
             </div>
             <div class="Komp1">
-                <img src="../-Inxhinieri e Webit-/Pics/user.png" width="100" height="90">
+                <img src="../Pics/user.png" width="100" height="90">
                 <br/>
                 Besim te plote ne webfaqen tone
             </div>
@@ -76,17 +76,17 @@
 
          <div class="Komponentat2">
             <div class="Komp12">
-                <img src="../-Inxhinieri e Webit-/Pics/interactive.png" width="100" height="90">
+                <img src="../Pics/interactive.png" width="100" height="90">
                 <br/>
                 Ne ofrojme nderveprim me komunitetin
             </div>
             <div class="Komp12">
-                <img src="../-Inxhinieri e Webit-/Pics/polling.png" width="100" height="90">
+                <img src="../Pics/polling.png" width="100" height="90">
                 <br/>
                 Ne ndajme me ju informacionet me te fundit
             </div>
             <div class="Komp12">
-                <img src="../-Inxhinieri e Webit-/Pics/polling.png" width="100" height="90">
+                <img src="../Pics/polling.png" width="100" height="90">
                 <br />
                 Ne ndajme me ju informacionet me te fundit
             </div>
@@ -100,29 +100,29 @@
         </div>
          <div class="StaffUp">
             <div class="Team1">
-                <img src="../-Inxhinieri e Webit-/Pics/ceo-office.png" width="100" height="90">
+                <img src="../Pics/ceo-office.png" width="100" height="90">
                 <br/>
                 <h4 style="color:black;">Menagjer</h4>
             </div>
             <div class="Team1">
-                <img src="../-Inxhinieri e Webit-/Pics/ceo.png" width="100" height="90">
+                <img src="../Pics/ceo.png" width="100" height="90">
                 <br/>
                 <h4 style="color:black;">CEO</h4>
             </div>
             <div class="Team1">
-                <img src="../-Inxhinieri e Webit-/Pics/ceo-user.png" width="100" height="90">
+                <img src="../Pics/ceo-user.png" width="100" height="90">
                 <br/>
                 <h4 style="color:black;">CFO</h4>
             </div>
         </div>
         <div class="StaffDown">
             <div class="Team1">
-                <img src="../-Inxhinieri e Webit-/Pics/user.png" width="100" height="90">
+                <img src="../Pics/user.png" width="100" height="90">
                 <br/>
                 <h4 style="color:black;">Co-Founder</h4>
             </div>
             <div class="Team1">
-                <img src="../-Inxhinieri e Webit-/Pics/user.png" width="100" height="90">
+                <img src="../Pics/user.png" width="100" height="90">
                 <h4 style="color:black;">CTO</h4>
                 <br/>
             </div>

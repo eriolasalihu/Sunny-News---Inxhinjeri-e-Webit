@@ -2,16 +2,12 @@
 <html>
     <head>
 
-<<<<<<< HEAD
-        <link rel="stylesheet" href="../style/AboutUs.css">
-        <link rel="stylesheet" href="../style/HeaderStyle.css">
-        <link rel="stylesheet" href="../style/FooterStyle.css">
-=======
+
         <link rel="stylesheet" type="text/css" href="../style/AboutUs.css">
         <link rel="stylesheet" type="text/css" href="../style/FooterStyle.css">
         <link rel="stylesheet" type="text/css" href="../style/HeaderStyle.css">
         <link rel="stylesheet" type="text/css" href="../style/SliderStyle.css">
->>>>>>> 72325315b9c2c16a6271e1e2e3fe6ca08d20ab4c
+
           <title>
             About us
           </title>

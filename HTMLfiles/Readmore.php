@@ -37,7 +37,7 @@
         <div class="main">
             <div class="home">
                 <div class="left">
-                    <img src="../images/albina.jpg" class="home-img" alt="Albina ne Eurovision">
+                    <img src="../-Inxhinieri e Webit-/images/albina.jpg" class="home-img" alt="Albina ne Eurovision">
                 
                     <!-- <h2 class="heading-2">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium.
@@ -47,22 +47,22 @@
                     <h3 class="heading-3">Lajmet e fundit</h3>
                     <div class="lists">
                         <div class="list">
-                            <img src="../images/cold-weather.jpg" alt="fotoja">
+                            <img src="../-Inxhinieri e Webit-/images/cold-weather.jpg" alt="fotoja">
                             <a href="#"><p>Stuhia dimërore që kaploi SHBA-në, humbin jetën 17 persona.</p></a>
                         </div>
 
                         <div class="list">
-                            <img src="../images/sulmkibernetik.jpg" alt="fotoja">
+                            <img src="../-Inxhinieri e Webit-/images/sulmkibernetik.jpg" alt="fotoja">
                             <a href="#"><p>Sulm kibernetik ndaj Bankës Credins në Shqipëri: Llogaritë dhe asetet janë të sigurta</p></a>
                         </div>
 
                         <div class="list">
-                            <img src="../images/twitter.png" alt="fotoja">
+                            <img src="../-Inxhinieri e Webit-/images/twitter.png" alt="fotoja">
                             <a href="#"><p>Elon Musk: Postimet në Twitter lexohen 100 herë më shumë se sa që pëlqehen</p></a>
                         </div>
 
                         <div class="list">
-                            <img src="../images/dialogu.jpg" alt="fotoja">
+                            <img src="../-Inxhinieri e Webit-/images/dialogu.jpg" alt="fotoja">
                             <a href="#"><p>Barrikadat në veri bllokuan edhe dialogun Kosovë-Serbi.</p></a>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                 </li>
             </ul>
             <div class="b-footer">
-                <p>All rights reserved by ©SunnyHillNews 2022 </p>
+                <p>All rights reserved by ©SunnyHillNews 2023 </p>
             </div>
         </footer>
 </body>

@@ -36,11 +36,10 @@
                 <br>
                 <input name="login-btn" type="submit" onclick="validate()">LOGIN</input>
                 <p class="message"></p>
-            </form>
-
-            <form class="login-form">
+                
                 <button><a href="../Register.html">SIGN UP</button></a>
             </form>
+            
         </div>
     </div>
 

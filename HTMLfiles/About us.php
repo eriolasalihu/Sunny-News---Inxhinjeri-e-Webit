@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <link rel="stylesheet" type="text/css" href="../style/AboutUs.css">
         <link rel="stylesheet" type="text/css" href="../style/FooterStyle.css">
         <link rel="stylesheet" type="text/css" href="../style/HeaderStyle.css">

@@ -122,7 +122,7 @@
             </li>
         </ul>
         <div class="b-footer">
-            <p>All rights reserved by ©SunnyHillNews 2022 </p>
+            <p>All rights reserved by ©SunnyHillNews 2023 </p>
         </div>
     </footer>
 </body>

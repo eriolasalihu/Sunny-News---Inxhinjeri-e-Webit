@@ -15,16 +15,11 @@
 			<?php
 			}
 			?>
-			<a class="active" href="../HTMLfiles/HomeStyle.html">Home</a>
-			<a href="../HTMLfiles/About us.html">About Us</a>
-			<?php
-			if (isset($_SESSION['role'])) {
-			?>
-				<a href="../HTMLfiles/login.html">Log in</a>
-				<a href="../HTMLfiles/Register.html">Register</a>
-			<?php
-			}
-			?>
+			<a class="active" href="../HTMLfiles/Homepage.php">Home</a>
+			<a href="../HTMLfiles/About us.php">About Us</a>
+				<a href="../HTMLfiles/Login.php">Log in</a>
+				<a href="../HTMLfiles/Register.php">Register</a>
+			
 		</div>
 	</div>
 </header>

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
-
-require_once '../backend/procedural/database.inc.php';
-require_once '../backend/procedural/register.php';
-
+    session_start();
 ?>
 
 <head>

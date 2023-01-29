@@ -19,12 +19,12 @@
 
 <body>
     <?php
-    include('../Re-Usable/header.php');
+        include('../re-Usable/loginHeader.php');
     ?>
 
     <main>
         <div class="container">
-            <form id="form" action="../backend/loginVerify.php" method="post">
+            <form id="form" action="../backend/registerVerify.php" method="post">
                 <h1>Regjistrohu</h1>
                 <div class="input-control">
                     <input type="text" name="username" id="username" placeholder="Username" />

@@ -48,9 +48,9 @@
     </div>
 
         <div class="label2">
-            <label>
+            <p>
                 Sherbimet tona
-            </label>
+</p>
         </div>
         <div class="Komponentat">
             <div class="Komp1">

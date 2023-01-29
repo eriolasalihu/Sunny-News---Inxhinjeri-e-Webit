@@ -13,15 +13,7 @@
 			}
 			?>
 			<a class="active" href="../HTMLfiles/Homepage.php">Home</a>
-<<<<<<< HEAD
-			<a href="../HTMLfiles/About us.html">About Us</a>
-			<a href="../backend/logout.php">Logout</a>
-=======
 			<a href="../HTMLfiles/About us.php">About Us</a>
-				<a href="../HTMLfiles/Login.php">Log in</a>
-				<a href="../HTMLfiles/Register.php">Register</a>
-			
->>>>>>> a3579c99d3dfc938e233068f31cdda3081137fea
 		</div>
 	</div>
 </header>

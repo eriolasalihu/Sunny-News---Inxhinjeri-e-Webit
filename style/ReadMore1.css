@@ -81,15 +81,15 @@
 }
 
 .card:nth-child(1) .card-image {
-    background-image:url(../-Inxhinieri\ e\ Webit-/strawberry.jfif);
+    background-image:url(../strawberry.jfif);
 }
 
 .card:nth-child(2) .card-image {
-    background-image: url(../-Inxhinieri\ e\ Webit-/fruit_banana-01.webp);
+    background-image: url(../fruit_banana-01.webp);
 }
 
 .card:nth-child(3) .card-image {
-    background-image: url(../-Inxhinieri\ e\ Webit-/oranges-49747-1.jpg);
+    background-image: url(../oranges-49747-1.jpg);
 }
 
 .card:hover {

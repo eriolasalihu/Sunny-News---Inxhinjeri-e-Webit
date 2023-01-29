@@ -39,7 +39,7 @@
         </div>
         <section class="banner">
             <div class="banner-main-content">
-                <h2 style="margin-top: 59px">NJOFTOHU ME LAJMET ME TE REJA</h2>
+                <h2 style="margin-top: 59px">NJOsFTOHU ME LAJMET ME TE REJA</h2>
                 <h3>Lajmet rreth botes</h3>
 
                 <button>

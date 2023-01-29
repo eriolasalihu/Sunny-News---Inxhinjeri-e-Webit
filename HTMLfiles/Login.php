@@ -34,7 +34,7 @@
                 <input type="password" name="password" id="password" placeholder="Password" required/>
                 <br>
                 <br>
-                <input name="login-btn" type="submit" onclick="validate()">LOGIN</input>
+                <input name="login-btn" class="submitButton"type="submit" onclick="validate()"></input>
                 <p class="message"></p>
                 
                 <button><a href="../Register.html">SIGN UP</button></a>

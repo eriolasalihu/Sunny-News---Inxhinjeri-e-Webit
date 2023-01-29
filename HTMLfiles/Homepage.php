@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php
 
-require_once '../backend/procedural/database.inc.php';
-require_once '../backend/procedural/register.php';
-
-?>
 
 <head>
     <link rel="stylesheet" href="../style/HomeStyle.css">

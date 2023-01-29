@@ -14,18 +14,10 @@
     </head>
 
     <body>
-        <div class="header">	
-            <img src="https://www.pngkey.com/png/full/208-2088636_news-amp-events-report-icon-black-png-newspaper.png" style="width: 72px;
-    margin: 0px 12px; height: 45px;
-    "/>
-			<!-- <a class="logo">SunnyNews</a> -->
-			<div class="header-right">
-			  <a class="active" href="../-Inxhinieri e Webit-/HomeStyle.html">Home</a>
-			  <a href="../-Inxhinieri e Webit-/About us.html">About Us</a>
-              <a href="../-Inxhinieri e Webit-/login.html">Login</a>
-			  <a href="../-Inxhinieri e Webit-/Register.html">Register</a>
-			</div>
-		</div>
+
+<?php
+    include('../Re-Usable/header.php');
+    ?>
 
         <div class="slider">
       <span id="slide-1"></span>

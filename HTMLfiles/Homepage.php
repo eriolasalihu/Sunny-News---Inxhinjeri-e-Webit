@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <?php
     session_start();
 ?>
+=======
+
+>>>>>>> a3579c99d3dfc938e233068f31cdda3081137fea
 
 <head>
     <link rel="stylesheet" href="../style/HomeStyle.css">

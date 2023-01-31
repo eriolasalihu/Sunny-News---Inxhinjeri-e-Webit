@@ -33,9 +33,9 @@ class ContactMapper extends Dbh
 
     public function deleteForm($id)
     {
-        $this->query = "DELETE from contactform where form_id=:form_id";
+        $this->query = "DELETE from contactform where id=:id";
         $statement = $this->conn->prepare($this->query);
-        $statement->bindParam(":form_id", $id);
+        $statement->bindParam(":id", $id);
         $statement->execute();
     }
 

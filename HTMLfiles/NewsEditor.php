@@ -55,7 +55,7 @@
                     <label>
                         Content *
                     </label>
-                    <textarea name="content" id="content"></textarea>
+                    <textarea name="content" id="content" style="margin-bottom: 10px;"></textarea>
                     <label>
                        Journalist name(s)
                     </label>

@@ -59,7 +59,7 @@
                     <?php echo $form['message']?>
                 </p>
                         
-                <a href=<?php echo "../backend/deleteContact.php?id=".$form['id'];
+                <a href=<?php echo "../backend/Delete/deleteContact.php?id=".$form['id'];
                     ?>>Confirm</a>
                 <?php
                 } 

@@ -27,7 +27,6 @@
     <?php
     include('../Re-Usable/header.php');
     ?>
-
     <div class="formDiv">
         <p>
             Contact us for support
@@ -36,31 +35,21 @@
             Fields marked with * are required
         </b>
         <form action="../backend/logic/contactLogic.php" method="post">
-
             <label>
                 * Your name and last name:
             </label>
             <input required min="0" max="40" name="name">
-
-
             <br />
-
-
             <label>
                 * Your email:
             </label>
             <input required min="0" max="40" type="email" name="email">
-
             <br />
-
             <label>
                 Your phone number:
             </label>
             <input min="0" max="40" name="phoneNr">
-
-
             <br />
-
             <label>
                 Category of support
             </label>
@@ -72,23 +61,14 @@
                 <option value="itSupport">It Support</option>
             </select>
             <br />
-
-
             <label>
                 * Your message:
             </label>
             <textarea required min="0" max="40" name="message">
                 </textarea>
-
             <input type="submit" class="btn" name="submitBtn">
-
         </form>
-
-
     </div>
-
-
-
     <?php
     include('../Re-Usable/footer.php');
     ?>

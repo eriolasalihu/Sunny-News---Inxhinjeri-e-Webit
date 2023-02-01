@@ -160,7 +160,7 @@
                     <a href=<?php echo "../backend/Delete/deleteArticle.php?id=".$articles['id'];
                     ?>>Delete</a>
                     <br/>
-                    <a href=<?php echo "../backend/incTimesRead.php?id=".$articles['id'];
+                    <a href=<?php echo "../backend/Logic/incTimesRead.php?id=".$articles['id'];
                     ?>>Increment viewership</a>
                 <?php 
                     }

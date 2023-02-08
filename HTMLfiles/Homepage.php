@@ -68,7 +68,7 @@ $articles=$mapper->getAllArticles();
 
                         <div class="banner-sub-content">
                             <div class="hot-topic">
-                                <img src="https://ketohh.com/wp-content/uploads/2018/01/LRM_EXPORT_64614379716267_20181012_092025598-e1539296818519.jpeg" alt="" style="width: 102%;">
+                                <img src="https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80" alt="" style="width: 102%;">
 
                                 <div class="hot-topic-content">
                                     <h2>Sa ndikojne frutat ne shendetin tone</h2>
@@ -76,7 +76,7 @@ $articles=$mapper->getAllArticles();
                                     <h3>Frutat</h3>
                                     <p>E preferuara e stinëve të fundit është bërë një varietet luleshtrydhesh i edukuar në Itali -
                                         Jolie....</p>
-                                    <a href="../-Inxhinieri e Webit-/ReadMore1.html">Lexo</a>
+                                    <a href="ReadMore1.php">Lexo</a>
                                 </div>
                             </div>
 
@@ -88,7 +88,7 @@ $articles=$mapper->getAllArticles();
 
                                     <h3>Eurovision 2022</h3>
                                     <p>Kush eshte Albina Kelmendi, qe rrembeu vendin e dyte dhe te pare ne Eurovision.</p>
-                                    <a href="../-Inxhinieri e Webit-/Readmore.html">Lexo</a>
+                                    <a href="Readmore.php">Lexo</a>
                                 </div>
                             </div>
 

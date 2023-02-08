@@ -37,7 +37,7 @@ require_once '../backend/dbh.class.php';
                 <input name="login-btn" class="submitButton" type="submit" onclick="validate()"></input>
                 <p class="message"></p>
 
-                <button><a href="../Register.html">SIGN UP</button></a>
+                <button><a href="Register.php">SIGN UP</button></a>
             </form>
 
         </div>

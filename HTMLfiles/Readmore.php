@@ -18,10 +18,10 @@
                 " />
               
                 <div class="header-right">
-            <a class="active" href="../-Inxhinieri e Webit-/HomeStyle.html">Home</a>
-            <a href="../-Inxhinieri e Webit-/About us.html">About Us</a>
-            <a href="../-Inxhinieri e Webit-/login.html">Log in</a>
-            <a href="../-Inxhinieri e Webit-/Register.html">Register</a>
+            <a class="active" href="Homepage.php">Home</a>
+            <a href="About us.php">About Us</a>
+            <a href="Login.php">Log in</a>
+            <a href="Register.php">Register</a>
                 </div>
             </div>
            </header>
@@ -37,7 +37,7 @@
         <div class="main">
             <div class="home">
                 <div class="left">
-                    <img src="../-Inxhinieri e Webit-/images/albina.jpg" class="home-img" alt="Albina ne Eurovision">
+                    <img src="../images/albina.jpg" class="home-img" alt="Albina ne Eurovision">
                 
                     <!-- <h2 class="heading-2">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium.
@@ -47,22 +47,22 @@
                     <h3 class="heading-3">Lajmet e fundit</h3>
                     <div class="lists">
                         <div class="list">
-                            <img src="../-Inxhinieri e Webit-/images/cold-weather.jpg" alt="fotoja">
+                            <img src="../images/cold-weather.jpg" alt="fotoja">
                             <a href="#"><p>Stuhia dimërore që kaploi SHBA-në, humbin jetën 17 persona.</p></a>
                         </div>
 
                         <div class="list">
-                            <img src="../-Inxhinieri e Webit-/images/sulmkibernetik.jpg" alt="fotoja">
+                            <img src="../images/sulmkibernetik.jpg" alt="fotoja">
                             <a href="#"><p>Sulm kibernetik ndaj Bankës Credins në Shqipëri: Llogaritë dhe asetet janë të sigurta</p></a>
                         </div>
 
                         <div class="list">
-                            <img src="../-Inxhinieri e Webit-/images/twitter.png" alt="fotoja">
+                            <img src="../images/twitter.png" alt="fotoja">
                             <a href="#"><p>Elon Musk: Postimet në Twitter lexohen 100 herë më shumë se sa që pëlqehen</p></a>
                         </div>
 
                         <div class="list">
-                            <img src="../-Inxhinieri e Webit-/images/dialogu.jpg" alt="fotoja">
+                            <img src="../images/dialogu.jpg" alt="fotoja">
                             <a href="#"><p>Barrikadat në veri bllokuan edhe dialogun Kosovë-Serbi.</p></a>
                         </div>
                     </div>

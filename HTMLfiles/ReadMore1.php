@@ -15,10 +15,10 @@
         " />
 
     <div class="header-right">
-        <a class="active" href="../-Inxhinieri e Webit-/HomeStyle.html">Home</a>
-        <a href="../-Inxhinieri e Webit-/About us.html">About Us</a>
-        <a href="../-Inxhinieri e Webit-/login.html">Log in</a>
-        <a href="../-Inxhinieri e Webit-/Register.html">Register</a>
+        <a class="active" href="Homepage.php">Home</a>
+        <a href="About us.php">About Us</a>
+        <a href="Login.php">Log in</a>
+        <a href="Register.php">Register</a>
     </div>
 </div>
     </header>

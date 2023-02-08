@@ -76,11 +76,19 @@ class ArticleMapper extends Dbh
         return $result = $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getArticlesByCategory($category){
+        $this->query = "select * from articles where category=:category";
+        $statement = $this->conn->prepare($this->query);
+        $statement->bindParam(":category", $category);
+        $statement->execute();
+        return $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 
     public function insertArticle(\Article $article)
     {
-        $query = "INSERT INTO articles (headline,content,journalists,dateAdded,timesRead)
-                VALUES(:headline,:content,:journalists,:dateAdded,:timesRead)";
+        $query = "INSERT INTO articles (headline,content,journalists,dateAdded,timesRead,category)
+                VALUES(:headline,:content,:journalists,:dateAdded,:timesRead,:category)";
         $statement = $this->conn->prepare($query);
 
         $headline = $article->getHeadline();
@@ -88,12 +96,14 @@ class ArticleMapper extends Dbh
         $journalists = $article->getJournalist();
         $dateAdded = $article->getDateAdded();
         $timesRead = $article->getTimesRead();
+        $category = $article->getCategory();
 
         $statement->bindParam(":headline", $headline);
         $statement->bindParam(":content", $content);
         $statement->bindParam(":journalists", $journalists);
         $statement->bindParam(":dateAdded", $dateAdded);
         $statement->bindParam(":timesRead", $timesRead);
+        $statement->bindParam(":category", $category);
         $statement->execute();
     }
 
@@ -101,7 +111,7 @@ class ArticleMapper extends Dbh
     public function editArticle(\Article $article, $id)
     {
         $query = "UPDATE articles SET headline=:headline,content=:content,journalists=:journalists
-                    ,dateAdded=:dateAdded,timesRead=:timesRead
+                    ,dateAdded=:dateAdded,timesRead=:timesRead, category=:category
                     WHERE id=:id";
         var_dump($article);
         $statement = $this->conn->prepare($query);
@@ -110,6 +120,7 @@ class ArticleMapper extends Dbh
         $journalists = $article->getJournalist();
         $dateAdded = $article->getDateAdded();
         $timesRead = $article->getTimesRead();
+        $category = $article->getCategory();
 
 
         $statement->bindParam(":headline", $headline);
@@ -117,6 +128,7 @@ class ArticleMapper extends Dbh
         $statement->bindParam(":journalists", $journalists);
         $statement->bindParam(":dateAdded", $dateAdded);
         $statement->bindParam(":timesRead", $timesRead);
+        $statement->bindParam(":category", $category);
         $statement->bindParam(":id", $id);
         $statement->execute();
     }

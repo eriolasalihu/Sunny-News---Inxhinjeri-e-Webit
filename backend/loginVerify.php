@@ -3,9 +3,9 @@
     include_once '../backend/SuperClass/SimpleUser.php';
     require_once '../backend/Mapper/userMapper.php';
 
-    session_start();
 
     if(isset($_POST['login-btn'])){
+        session_start();
         $login = new Login ($_POST);
         $login->verifyData();
     }

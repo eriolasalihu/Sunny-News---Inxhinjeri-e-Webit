@@ -14,6 +14,13 @@
 			?>
 			<a class="active" href="../HTMLfiles/Homepage.php">Home</a>
 			<a href="../HTMLfiles/About us.php">About Us</a>
+			<?php
+			if(isset($_SESSION['role']) ) {
+			?>
+				<a href="../backend/logout.php">Log out</a>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 </header>

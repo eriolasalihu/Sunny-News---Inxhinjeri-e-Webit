@@ -34,7 +34,7 @@
     <div class="header">
         <div>
             <b>
-                DashboardPro
+                Dashboard
             </b>
         </div>
 

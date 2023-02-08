@@ -8,14 +8,16 @@
         private $journalist;
         private $dateAdded;
         private $timesRead;
+        private $category;
 
-            public function __construct($headline,$content,$journalist,$dateAdded,$timesRead)
+            public function __construct($headline,$content,$journalist,$dateAdded,$timesRead,$category)
             {
                 $this->headline=$headline;
                 $this->content=$content;
                 $this->journalist=$journalist;
                 $this->dateAdded=$dateAdded;
                 $this->timesRead=$timesRead;
+                $this->category=$category;
             }
 
         public function getHeadline(){
@@ -36,6 +38,10 @@
 
         public function getTimesRead(){
             return $this->timesRead;
+        }
+
+        public function getCategory(){
+            return $this->category;
         }
 
     }

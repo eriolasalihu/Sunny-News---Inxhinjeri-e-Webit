@@ -76,7 +76,7 @@ $articles=$mapper->getAllArticles();
                                     <h3>Frutat</h3>
                                     <p>E preferuara e stinëve të fundit është bërë një varietet luleshtrydhesh i edukuar në Itali -
                                         Jolie....</p>
-                                    <a href="ReadMore1.php">Lexo</a>
+                                    <a href="HealthCategory.php">Lexo</a>
                                 </div>
                             </div>
 

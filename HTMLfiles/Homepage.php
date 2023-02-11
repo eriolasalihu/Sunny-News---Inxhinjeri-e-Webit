@@ -14,6 +14,7 @@ $articles=$mapper->getAllArticles();
     <link rel="stylesheet" href="../style/HomeStyle.css">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/HeaderStyle.css">
+    <script type="text/javascript" src="../js/slider.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <title>Homepage</title>
@@ -158,6 +159,40 @@ $articles=$mapper->getAllArticles();
                 </div>
 
             </div>
+
+<div class="slideshow-container" style="margin-top: 10%; width:50%">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://www.kenthousinggroup.org.uk/assets/uploads/2016/06/635847974891062780-425303270_news1.jpg" style="width:100%">
+  <div class="text">Lajmet me te reja</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://graziamagazine.com/wp-content/uploads/2022/04/GettyImages-1389382981.jpg?resize=1024%2C693" style="width:100%">
+  <div class="text">Hailey Bieber/ Justin Bieber</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/11/896/500/Selena-Gomez-Hailey-Bieber.jpg?ve=1&tl=1" style="width:100%">
+  <div class="text">Selena Gomes && Hailey Bieber</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
         </main>
 
         <?php

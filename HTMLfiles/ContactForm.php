@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html>
 <?php
-
-
-
+session_start()
 ?>
-
+<html>
 <head>
     <title>
         Contact Us
@@ -64,7 +61,7 @@
             <label>
                 * Your message:
             </label>
-            <textarea required min="0" max="40" name="message">
+            <textarea required min="0" max="40" name="message" style="    border-radius: 20px;">
                 </textarea>
             <input type="submit" class="btn" name="submitBtn">
         </form>

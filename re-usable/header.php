@@ -17,6 +17,13 @@
 			<?php
 			if(isset($_SESSION['role']) ) {
 			?>
+				<a href="../HTMLfiles/ContactForm.php">Contact Form</a>
+			<?php
+			}
+			?>
+			<?php
+			if(isset($_SESSION['role']) && $_SESSION['role'] == '0') {
+			?>
 				<a href="../backend/logout.php">Log out</a>
 			<?php
 			}

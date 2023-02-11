@@ -57,7 +57,7 @@ $articles = $mapper->getAllArticles();
             <label>
                 Content *
             </label>
-            <textarea name="content" id="content" style="margin-bottom: 10px;"></textarea>
+            <textarea name="content" id="content" style="margin-bottom: 10px; border-radius: 10px;"></textarea>
             <label>
                 Journalist name(s)
             </label>
@@ -66,7 +66,10 @@ $articles = $mapper->getAllArticles();
             <label>
                 Category of support
             </label>
-            <select name="category" id="cat">
+            <select name="category" id="cat" style="height: 35px;
+                                                    border-radius: 10px;
+                                                    border-color: #cec0c0;
+                                                    margin-bottom: 12px;">
                 <option value="badInfo1"></option>
                 <option value="sport">Sport</option>
                 <option value="politics">Politics</option>
@@ -99,7 +102,7 @@ $articles = $mapper->getAllArticles();
             Edit Article by Id
         </h3>
         <?php
-        $article = $mapper->getArticleByID('5');
+        $article = $mapper->getArticleByID('1');
         foreach ($article as $articles) {
         ?>
             <form action="../backend/Edit/editArticle.php" method="post" onsubmit="return validate()">

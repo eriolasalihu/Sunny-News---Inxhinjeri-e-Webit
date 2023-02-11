@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+session_start()
+?>
 <html>
     <head>
 
@@ -19,7 +22,7 @@
     include('../Re-Usable/header.php');
     ?>
 
-        <div class="slider">
+    <div class="slider">
       <span id="slide-1"></span>
       <span id="slide-2"></span>
       <span id="slide-3"></span>
@@ -33,8 +36,7 @@
         <a href="#slide-2"></a>
         <a href="#slide-3"></a>
       </div>
-    </div>
-
+    </div> 
         <div class="label2">
             <p>
                 Sherbimet tona

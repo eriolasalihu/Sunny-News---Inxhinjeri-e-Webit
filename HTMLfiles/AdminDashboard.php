@@ -30,7 +30,6 @@
         </title>
     </head>
     <body>
-
     <div class="header">
         <div>
             <b>
@@ -87,18 +86,5 @@
             ?>
         </div>
     </div>
-    <div class='parentNav'>
-        <div>
-            <h3>
-                Number of paid adverts:
-            </h3>
-        </div>
-        <div>
-            <h3>
-                Number of Journalists:
-            </h3>
-        </div>
-    </div>
-
     </body>
 </html>

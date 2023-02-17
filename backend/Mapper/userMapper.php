@@ -14,9 +14,9 @@ class UserMapper extends Dbh
 
     public function getUserByID($userId)
     {
-        $query = "SELECT * from userclass where userid=:id";
+        $query = "SELECT * from userclass where userId=:userId";
         $stmt = $this->conn->prepare($query);
-        $stmt->bindParam(":id", $userId);
+        $stmt->bindParam(":userId", $userId);
         $stmt->execute();
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         return  $result;

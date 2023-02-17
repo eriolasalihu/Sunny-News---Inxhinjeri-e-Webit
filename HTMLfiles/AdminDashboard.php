@@ -102,8 +102,8 @@ $nrUsers = $mapper->getNrUsers();
         </h3>
         <?php
         $mapper = new UserMapper();
-        $userId = 11;
-        $users = $mapper->getUserByID($userId);
+        $users = $mapper->getUserByID(11);
+        foreach ($user as $users) {
         ?>
         <form action="../backend/Edit/editUser.php" method="post" onsubmit="return validate()">
             <b>
@@ -112,7 +112,7 @@ $nrUsers = $mapper->getNrUsers();
             <label>
                 ID *
             </label>
-            <input type="text" placeholder="Id" name="id" value=<?php echo $userId; ?>>
+            <input type="text" placeholder="Id" name="id" value=<?php echo $user['userId']; ?>>
             <label>
                 Email
             </label>
@@ -124,21 +124,8 @@ $nrUsers = $mapper->getNrUsers();
             <label>
                 Role
             </label>
-            <?php
-            $role = $user['role'];
-            function getRoleNameByRoleId($role)
-            {
-                if ($role == "1") {
-                    $roleName = "Admin";
-                } else {
-                    $roleName = "User";
-                }
-                return $roleName;
-            }
-            $roleValue = getRoleNameByRoleId($userId);
-            ?>
             <select name="role" id="cat">
-                <option value="badInfo1">"<?php echo $roleValue; ?>"</option>
+                <option value="badInfo1"></option>
                 <option value="1">Admin</option>
                 <option value="0">User</option>
             </select>
@@ -148,6 +135,9 @@ $nrUsers = $mapper->getNrUsers();
             </button>
             <br />
         </form>
+        <?php
+        }
+        ?>
     </div>
     <div class='parentNav'>
         <div>

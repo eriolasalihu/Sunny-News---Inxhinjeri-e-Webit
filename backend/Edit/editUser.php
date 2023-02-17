@@ -11,7 +11,7 @@ if (isset($_POST['submitBtn'])) {
 class EditUser
 {
     private $userId;
-    private $name;
+    private $username;
     private $email;
     private $role;
 
@@ -19,13 +19,13 @@ class EditUser
     {
         $this->userId = $formData['id'];
         $this->email = $formData['email'];
-        $this->name = $formData['username'];
+        $this->username = $formData['username'];
         $this->role = $formData['role'];
     }
 
     public function editData()
     {
-        $user = new SimpleUser($this->userId, $this->email, $this->name,$this->role);
+        $user = new SimpleUser($this->userId, $this->email, $this->username,$this->role);
         $mapper = new UserMapper();
         $mapper->editUser($user, $this->userId);
         sleep(4);

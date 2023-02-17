@@ -1,35 +1,39 @@
 <?php
 
-    include_once '../backend/Mapper/userMapper.php';
+include_once '../backend/Mapper/userMapper.php';
 
-  //  if (isset($_SESSION["role"]) && $_SESSION['role']=='1') {
-        $mapper=new UserMapper();
+//  if (isset($_SESSION["role"]) && $_SESSION['role']=='1') {
+$mapper = new UserMapper();
 
-        $userList=$mapper->getAllUsers();
-        $nrUsers=$mapper->getNrUsers();
-   // }
+$userList = $mapper->getAllUsers();
+$nrUsers = $mapper->getNrUsers();
+// }
+
+
 
 ?>
 
 
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <link rel="stylesheet" href="../style/sidebar.css">
     <link rel="stylesheet" href="../style/journalistStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
     <script src="../js/sidebar.js"></script>
-        <title>
-            Admin Nav
-        </title>
-    </head>
-    <body>
+    <title>
+        Admin Nav
+    </title>
+</head>
+
+<body>
 
     <div class="header">
         <div>
@@ -38,15 +42,15 @@
             </b>
         </div>
 
-    <div>
-        <a href="../backend/logout.php">
-            Logout
-        </a>
-    </div>
+        <div>
+            <a href="../backend/logout.php">
+                Logout
+            </a>
+        </div>
     </div>
 
     <?php
-        include('../re-Usable/adminNav.php');
+    include('../re-Usable/adminNav.php');
     ?>
 
     <div class='infoBox'>
@@ -54,38 +58,96 @@
             <h3>
                 All users:
             </h3>
-                <div>
-                    <?php
-                        $users=$mapper->getAllUsers();
-                        foreach($users as $user){
-                    ?>
+            <div>
+                <?php
+                $users = $mapper->getAllUsers();
+                foreach ($users as $user) {
+                ?>
                     <b>
-                        <?php echo $user['username']?>
+                        <?php echo $user['username'] ?>
                     </b>
-                        <br/>
+                    <br />
                     <b>
-                        <?php echo $user['email']?>
+                        <?php echo $user['email'] ?>
                     </b>
-                    <?php
-                    }
-                    ?>
-                </div>
+                    <br>
+                    <br>
+                    <a href=<?php echo "../backend/Delete/deleteUser.php?id=" . $user['userId'];
+                        ?>>Delete</a>
+                <br />
+                <?php
+                }
+                ?>
+            </div>
         </div>
         <div>
             <h3>
                 Number of users:
             </h3>
             <?php
-                $nrUsers=$mapper->getNrUsers();
-                foreach($nrUsers as $nr){
+            $nrUsers = $mapper->getNrUsers();
+            foreach ($nrUsers as $nr) {
             ?>
-            <h2>
-                <?php echo $nr['nrUsers']?>
-            </h2>
+                <h2>
+                    <?php echo $nr['nrUsers'] ?>
+                </h2>
             <?php
-                }
+            }
             ?>
         </div>
+    </div>
+    <div class="formBox">
+        <h3>
+            Edit User by Id
+        </h3>
+        <?php
+        $mapper = new UserMapper();
+        $userId = 11;
+        $users = $mapper->getUserByID($userId);
+        ?>
+        <form action="../backend/Edit/editUser.php" method="post" onsubmit="return validate()">
+            <b>
+                Fields marked with * are required
+            </b>
+            <label>
+                ID *
+            </label>
+            <input type="text" placeholder="Id" name="id" value=<?php echo $userId; ?>>
+            <label>
+                Email
+            </label>
+            <input type="text" placeholder="Id" name="email" value=<?php echo $user['email']; ?>>
+            <label>
+                Username
+            </label>
+            <input type="text" placeholder="UserName" name="username" value=<?php echo $user['username']; ?>>
+            <label>
+                Role
+            </label>
+            <?php
+            $role = $user['role'];
+            function getRoleNameByRoleId($role)
+            {
+                if ($role == "1") {
+                    $roleName = "Admin";
+                } else {
+                    $roleName = "User";
+                }
+                return $roleName;
+            }
+            $roleValue = getRoleNameByRoleId($userId);
+            ?>
+            <select name="role" id="cat">
+                <option value="badInfo1">"<?php echo $roleValue; ?>"</option>
+                <option value="1">Admin</option>
+                <option value="0">User</option>
+            </select>
+
+            <button name="submitBtn" id="submitBtn">
+                Submit
+            </button>
+            <br />
+        </form>
     </div>
     <div class='parentNav'>
         <div>
@@ -100,5 +162,6 @@
         </div>
     </div>
 
-    </body>
+</body>
+
 </html>

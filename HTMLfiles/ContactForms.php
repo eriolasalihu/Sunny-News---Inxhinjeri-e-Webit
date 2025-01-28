@@ -60,7 +60,8 @@
                 </p>
                         
                 <a href=<?php echo "../backend/Delete/deleteContact.php?id=".$form['id'];
-                    ?>>Confirm</a>
+                    ?> class="deleteButton">Confirm</a>
+                    <br>
                 <?php
                 } 
                 ?>

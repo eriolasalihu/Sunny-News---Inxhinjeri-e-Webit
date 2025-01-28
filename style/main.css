@@ -1,4 +1,8 @@
-
+@media screen and (max-width: 800px) {
+    .backgroundColorsss {
+        height: 17vh;
+    }
+}
 .social-icons{
     display: none;
 }

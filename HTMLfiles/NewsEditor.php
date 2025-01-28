@@ -158,13 +158,14 @@ $articles = $mapper->getAllArticles();
             foreach ($article as $articles) {
             ?>
                 <b>
-                    <?php echo $articles['headline']; ?><br>
+                    <h2><?php echo $articles['headline']; ?><br></h2>
+                    
                 </b>
                 <p>
                     <?php echo $articles['content']; ?><br>
                 </p>
                 <p>
-                    <?php echo $articles['journalists']; ?><br>
+                    <h4>Journalist Name: <?php echo $articles['journalists']; ?><br></h4>
                 </p>
                 <p>
                     <?php echo $articles['timesRead']; ?><br>
@@ -174,10 +175,10 @@ $articles = $mapper->getAllArticles();
                 </p>
                 <br />
                 <a href=<?php echo "../backend/Delete/deleteArticle.php?id=" . $articles['id'];
-                        ?>>Delete</a>
+                        ?> class="deleteButton">Delete</a>
                 <br />
-                <a href=<?php echo "../backend/Logic/incTimesRead.php?id=" . $articles['id'];
-                        ?>>Increment viewership</a>
+                        <br>
+                        <hr>
             <?php
             }
             ?>

@@ -10,8 +10,8 @@
 <body>
     <header>
 <div class="header">
-    <img src="https://www.pngkey.com/png/full/208-2088636_news-amp-events-report-icon-black-png-newspaper.png" style="width: 72px;
-        margin: 0px 12px; height: 45px;
+    <img src="https://www.pngkey.com/png/full/208-2088636_news-amp-events-report-icon-black-png-newspaper.png" style="width: 57px;
+        margin-top:5px; height: 36px;
         " />
 
     <div class="header-right">
@@ -122,7 +122,7 @@
             </li>
         </ul>
         <div class="b-footer">
-            <p>All rights reserved by ©SunnyHillNews 2023 </p>
+            <p>All rights reserved by ©SunnyHillNews 2024 </p>
         </div>
     </footer>
 </body>

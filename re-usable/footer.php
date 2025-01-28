@@ -39,7 +39,7 @@
     </ul>
     <div class="b-footer">
     <p>
-    All rights reserved by ©SunnyNews 2021 </p>
+    All rights reserved by ©SunnyNews 2025 </p>
     </div>
     </footer>
 </body>

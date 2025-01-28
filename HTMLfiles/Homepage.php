@@ -11,8 +11,6 @@ $articles=$mapper->getAllArticles();
 <head>
     <link rel="stylesheet" href="../style/HomeStyle.css">
     <link rel="stylesheet" href="../style/FooterStyle.css">
-    <link rel="stylesheet" href="../style/HomeStyle.css">
-    <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/HeaderStyle.css">
     <script type="text/javascript" src="../js/slider.js"></script>
     <meta charset="UTF-8">
@@ -21,178 +19,183 @@ $articles=$mapper->getAllArticles();
 </head>
 
 <body>
-
-    <body>
         <?php
         include('../Re-Usable/header.php');
         ?>
         <main>
-            <div class="social-icons">
-                <ul>
-                    <li>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <section class="banner">
-                <div class="banner-main-content">
-                    <h2 style="margin-top: 59px">NJOFTOHU ME LAJMET ME TE REJA</h2>
-                    <h3>Lajmet rreth botes</h3>
-
-                    <button>
-                        <a href="#" style="text-decoration:none">Shiko me shume</a>
-                    </button>
-
-                    <div class="current-news-head">
-                        <?php
-                        $article = $mapper->showTop4MostRead();
-                        foreach ($article as $articles) {
-                        ?>
-                            <h3>
-                                <?php echo $articles['headline']; ?><br>
-                            </h3>
-                            <span>
-                                <?php echo $articles['journalists']; ?><br>
-                            </span>
-                        <?php
-                        }
-                        ?>
-
-                        <div class="banner-sub-content">
-                            <div class="hot-topic">
-                                <img src="https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80" alt="" style="width: 102%;">
-
-                                <div class="hot-topic-content">
-                                    <h2>Sa ndikojne frutat ne shendetin tone</h2>
-
-                                    <h3>Frutat</h3>
-                                    <p>E preferuara e stinëve të fundit është bërë një varietet luleshtrydhesh i edukuar në Itali -
-                                        Jolie....</p>
-                                    <a href="HealthCategory.php">Lexo</a>
-                                </div>
-                            </div>
-
-                            <div class="hot-topic">
-                                <img src="https://pix.eurovisionworld.com/pix/albania-festivali-i-kenges-2023-albina-familja-kelmendi.jpg" alt="">
-
-                                <div class="hot-topic-content">
-                                    <h2>Kush do te perfaqesoje Shqiperine ne Eurovision 2022? </h2>
-
-                                    <h3>Eurovision 2022</h3>
-                                    <p>Kush eshte Albina Kelmendi, qe rrembeu vendin e dyte dhe te pare ne Eurovision.</p>
-                                    <a href="Readmore.php">Lexo</a>
-                                </div>
-                            </div>
-
-                            <div class="hot-topic">
-                                <img src="https://yt3.googleusercontent.com/ytc/AMLnZu9X0I_rv6PlC0FPlF3893vaH-QPFiERqfBGQu68uA=s900-c-k-c0x00ffffff-no-rj" alt="">
-
-                                <div class="hot-topic-content">
-                                    <h2>Kur do te filloje BBV2 ne Shqiperi</h2>
-                                    <h3>Big Brother VIP</h3>
-                                    <p>Cili do te jete i ftuari i pare ne BBV2, kush do te udheheqe kete edicion te BBV2? Sa do te
-                                        jete shuma per fituesin?</p>
-                                    <a href="#">Lexo</a>
-                                </div>
-                            </div>
-
-                            <div class="hot-topic">
-                                <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_s_pog_staticContent_hero_lg_2x/primary/yk2f8tqpjxzdnw3e5b1n" alt="">
-
-                                <div class="hot-topic-content">
-                                    <h2>Kush do te fitoje WorldCup 2022?</h2>
-
-                                    <h3>World Cup 2022</h3>
-                                    <p>Argjentine vs France, cila do te jete fituese kete vite? Kush do te rrembeje kupen e botes?
-                                    </p>
-                                    <a href="#">Lexo</a>
-                                </div>
-                            </div>
-                        </div>
-            </section>
-            <div class="BottomBoxes">
-                <div class="BoxHoldr1">
-                    <img src="https://wallpaperforu.com/wp-content/uploads/2021/08/Messi-Paris-Saint-Germain-Wallpapers19.jpg" style="width: 100%;" />
-                    <h3>
-                        Sport
-                    </h3>
-                    <div>
-                        <a href="#">
-                            Lionel Messi është shpallur si lojtari më i mirë i Kampionatit Botëror të mbajtur në Katar.
-                        </a>
+            <div class="background-section">
+                <div class="display-row">
+                    <div class="image-container">
+                        <Image
+                            src="https://telegrafi.com/wp-content/uploads/2025/01/Screenshot_16-18-780x439.png"
+                            alt="Breaking news globe background"
+                        />
                     </div>
-                </div>
 
-                <div class="BoxHoldr1">
-                    <img src="https://cdn.hswstatic.com/gif/csi-lead.jpg" style="width: 95%;" />
-                    <h3>
-                        Kronika e zeze
-                    </h3>
-                    <div>
-                        <a href="#">
-                            Pas vitesh gjahtarësh të egër të pamëshirshëm, i shpëtuan të dënuarit Riddick papritmas e gjen
-                            veten të kapur midis
-                            forcave kundërshtare në një luftë për të ardhmen e racës njerëzore
-                        </a>
-                    </div>
-                </div>
+          <div class="news-content">
+            <h3>
+              E FUNDIT: <span>Zelensky bën thirrje për unitet</span>
+            </h3>
+            <p>
+            Presidenti ukrainas Volodymyr Zelensky ka bërë thirrje për “unitet” në veprim kundër Rusisë. 
+            Ne po punojmë vazhdimisht me partnerët tanë për të forcuar aftësitë tona mbrojtëse dhe për të reduktuar aftësinë e Rusisë për të terrorizuar Ukrainën”, shkroi presidenti ukrainas.
+              <span>Volodymyr Zelensky</span>.
+            </p>
+            <a href="#" class="action-btn">
+              Lexo me shume
+            </a>
+          </div>
+        </div>
+      </div>
 
-                <div class="BoxHoldr1">
-                    <img src="https://img.freepik.com/free-vector/medical-science-healthcare-blue-banner_1017-23667.jpg?w=2000" style="width: 100%;" />
-                    <h3>Shendetesi</h3>
+      <div class="news-section">
+  <h2>NJIHUNI ME LAJMET E FUNDIT</h2>
+  <h3>Lajmet rreth botës</h3>
 
-                    <div>
-                        <a href="#">
-                            Në të kaluarën, mundësitë e Kosovës për të zhvilluar një sistem modern të kujdesit shëndetësor
-                            ishin të kufizuara
-                        </a>
-                    </div>
-                </div>
+  <div class="news-button">
+    <a href="#" class="action-btn">
+              Lexo me shume
+            </a>
+  </div>
 
-            </div>
+  <div class="current-news-head">
+    <div class="banner-sub-content">
+      <div class="hot-topic">
+        <div class="hot-topic-image">
+          <img src="https://media.istockphoto.com/id/529664572/photo/fruit-background.jpg?s=612x612&w=0&k=20&c=K7V0rVCGj8tvluXDqxJgu0AdMKF8axP0A15P-8Ksh3I=" alt="Healthy lifestyle" />
+        </div>
+        <div class="hot-topic-content">
+          <h2>Sa ndikojnë frutat në shëndetin tonë</h2>
+          <h3>Shëndeti</h3>
+          <p>Frutat janë të rëndësishme për një dietë të ekuilibruar. Luleshtrydhet Jolie kanë zënë vendin e parë si më të preferuarat.</p>
+          <a href="HealthCategory.php">Lexo më shumë</a>
+        </div>
+      </div>
 
-<div class="slideshow-container" style="margin-top: 10%; width:50%">
+      <div class="hot-topic">
+        <div class="hot-topic-image">
+          <img src="https://esct2019.storage.googleapis.com/wp-content/uploads/2024/02/wsi-imageoptim-IMG_1097.jpeg?x88561" alt="Eurovision 2024" />
+        </div>
+        <div class="hot-topic-content">
+          <h2>Kush do të përfaqësojë Shqipërinë në Eurovision</h2>
+          <h3>Muzikë</h3>
+          <p>Pas suksesit të Albina Kelmendit në Eurovision 2023, shumë presin të shohin kush do të përfaqësojë Shqipërinë këtë vit.</p>
+          <a href="Readmore.php">Lexo më shumë</a>
+        </div>
+      </div>
 
+      <div class="hot-topic">
+        <div class="hot-topic-image">
+          <img src="https://media.istockphoto.com/id/529664572/photo/fruit-background.jpg?s=612x612&w=0&k=20&c=K7V0rVCGj8tvluXDqxJgu0AdMKF8axP0A15P-8Ksh3I=" alt="Healthy lifestyle" />
+        </div>
+        <div class="hot-topic-content">
+          <h2>Sa ndikojnë frutat në shëndetin tonë</h2>
+          <h3>Shëndeti</h3>
+          <p>Frutat janë të rëndësishme për një dietë të ekuilibruar. Luleshtrydhet Jolie kanë zënë vendin e parë si më të preferuarat.</p>
+          <a href="HealthCategory.php">Lexo më shumë</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="only-text">
+    <h2>Top news of the world</h2>
+  </div>
+</div>
+
+      <div class="bottom-boxes">
+        <div class="box-holder">
+          <div class="number-circle">1</div>
+          <div class="box-image">
+            <Image
+              src="https://assets.goal.com/images/v3/bltc38182c5f20878f4/GOAL_-_Blank_WEB_-_Facebook_-_2023-03-31T134149.308.png?auto=webp&format=pjpg&width=3840&quality=60"
+              alt="Sports news"
+            />
+          </div>
+          <div class="box-content">
+            <h3>Sport</h3>
+            <p>
+              <a href="#">
+                Lionel Messi është shpallur si lojtari më i mirë i Kampionatit
+                Botëror të mbajtur në Katar...
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="box-holder">
+          <div class="number-circle">2</div>
+          <div class="box-image">
+            <Image
+              src="https://media.npr.org/assets/img/2022/12/30/ap22364795346345-153c53713ce57b880428deae9fef9b9926961b6b.jpg"
+              alt="Another sports news"
+            />
+          </div>
+          <div class="box-content">
+            <h3>Football</h3>
+            <p>
+              <a href="#">
+                Cristiano Ronaldo arrin një tjetër rekord historik...
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="box-holder">
+          <div class="number-circle">3</div>
+          <div class="box-image">
+            <Image
+              src="https://assets.goal.com/images/v3/bltc38182c5f20878f4/GOAL_-_Blank_WEB_-_Facebook_-_2023-03-31T134149.308.png?auto=webp&format=pjpg&width=3840&quality=60"
+              alt="Sports news"
+            />
+          </div>
+          <div class="box-content">
+            <h3>Sport</h3>
+            <p>
+              <a href="#">
+                Lionel Messi është shpallur si lojtari më i mirë i Kampionatit
+                Botëror të mbajtur në Katar...
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="slideshow-container" style="margin-top: 10%; width:50%">
+
+<!-- Slide 1 -->
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="https://www.kenthousinggroup.org.uk/assets/uploads/2016/06/635847974891062780-425303270_news1.jpg" style="width:100%">
+  <img src="https://cdnimpuls.com/alfapress.al/media3/-640-0-unnamed-2-828.jpg" style="width:100%">
   <div class="text">Lajmet me te reja</div>
 </div>
 
+<!-- Slide 2 -->
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="https://graziamagazine.com/wp-content/uploads/2022/04/GettyImages-1389382981.jpg?resize=1024%2C693" style="width:100%">
   <div class="text">Hailey Bieber/ Justin Bieber</div>
 </div>
 
+<!-- Slide 3 -->
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/11/896/500/Selena-Gomez-Hailey-Bieber.jpg?ve=1&tl=1" style="width:100%">
-  <div class="text">Selena Gomes && Hailey Bieber</div>
+  <div class="text">Selena Gomes & Hailey Bieber</div>
 </div>
 
+<!-- Navigation arrows -->
 <a class="prev" onclick="plusSlides(-1)">❮</a>
 <a class="next" onclick="plusSlides(1)">❯</a>
 
 </div>
-<br>
 
+<!-- Dots for navigation -->
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-
-
         </main>
 
         <?php

@@ -1,7 +1,7 @@
 <?php
 
-    include_once 'C:\xampp\htdocs\-Inxhinieri e Webit-\backend\SuperClass\ArticleClass.php';
-    include_once 'C:\xampp\htdocs\-Inxhinieri e Webit-\backend\Mapper\articleMapper.php';
+    include_once 'C:\xampp\htdocs\Sunny-News---Inxhinjeri-e-Webit\backend\SuperClass\ArticleClass.php';
+    include_once 'C:\xampp\htdocs\Sunny-News---Inxhinjeri-e-Webit\backend\Mapper\articleMapper.php';
 
         session_start();
 

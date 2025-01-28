@@ -5,7 +5,16 @@ include_once '../backend/Mapper/articleMapper.php';
 include_once '../backend/logic/articleLogic.php';
 
 $mapper = new ArticleMapper();
-$articles = $mapper->getArticleByID(1);
+$articles = $mapper->getArticleByID(18);
+
+
+function debug_to_console($data) {
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
+
+    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
 ?>
 
 <head>
@@ -25,10 +34,10 @@ $articles = $mapper->getArticleByID(1);
         ?>
         <!-- <header> -->
         <?php
-        $article = $mapper->getArticleByID(1);
+        $article = $mapper->getArticleByID(18);
         foreach ($article as $articles) {
-
-        ?>
+            ?>
+            <?php debug_to_console("articles $articles")?>
             <main>
                 <h1 class="heading-1"><?php echo $articles['headline']; ?><br></h1>
                 <div class="sub-heading">

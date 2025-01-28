@@ -1,7 +1,7 @@
 <?php
 
-include_once 'C:\xampp\htdocs\-Inxhinieri e Webit-\backend\SuperClass\Contact.php';
-include_once 'C:\xampp\htdocs\-Inxhinieri e Webit-\backend\Mapper\contactMapper.php';
+include_once 'C:\xampp\htdocs\Sunny-News---Inxhinjeri-e-Webit\backend\SuperClass\Contact.php';
+include_once 'C:\xampp\htdocs\Sunny-News---Inxhinjeri-e-Webit\backend\Mapper\contactMapper.php';
 
 if (isset($_POST['submitBtn'])) {
     $contact = new ContactLogic($_POST);

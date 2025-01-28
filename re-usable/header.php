@@ -1,8 +1,8 @@
 <header>
 	<div class="header">
-		<img src="https://www.pngkey.com/png/full/208-2088636_news-amp-events-report-icon-black-png-newspaper.png" style="width: 72px;
-            margin: 0px 12px; height: 45px;
-            " />
+		<img src="https://www.pngkey.com/png/full/208-2088636_news-amp-events-report-icon-black-png-newspaper.png" style="width: 57px;
+        margin-top:5px; height: 36px;
+        "  />
 
 		<div class="header-right">
 			<?php
@@ -14,6 +14,8 @@
 			?>
 			<a class="active" href="../HTMLfiles/Homepage.php">Home</a>
 			<a href="../HTMLfiles/About us.php">About Us</a>
+			<a href="../HTMLfiles/Login.php">Login</a>
+			<a href="../HTMLfiles/Register.php">Register</a>
 			<?php
 			if(isset($_SESSION['role']) ) {
 			?>

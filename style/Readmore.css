@@ -132,10 +132,15 @@ blockquote::before{
 }
 
 .card{
-    font-size: 20px;
-    border: 1px solid;
+font-size: 20px;
     padding: 10px 20px;
     break-inside: avoid;
+    border-left: 4px dashed #0f2a88;
+
+}
+.card p{
+    font-size: 14px;
+    opacity: 0.8;
 }
 
 @media (max-width: 950px) {
